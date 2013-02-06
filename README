@@ -1,0 +1,58 @@
+RECOLED: Collaboative editor with extensive text logging audio
+recording capabilities  
+--------------------------------------------------------------
+
+See:
+
+o Bouamrane, D. King, S. Luz, and M. Masoodian.: A framework for
+  collaborative writing with recording and post-meeting retrieval
+  capabilities. IEEE Distributed Systems Online, 2004.
+  (http://www.cs.tcd.ie/~luzs/publications/BouamraneKingLuzMasoodian04.pdf)
+
+and
+
+o Massodian, M., Luz, S., Bouamrane, M. and King, D.: RECOLED: A
+  Group-Aware Collaborative Text Editor for Capturing Document
+  History. Proceedings of IADIS/WWW Internet 2005. 
+  (http://www.cs.tcd.ie/~luzs/publications/MasoodianLuzEtAlWWW05.pdf)
+
+
+CONTENTS
+--------
+
+This directory contains the recoled source code and some
+documentation. 
+
+REQUIREMENTS:
+-------------
+
+RECOLED depends on recplaj and on the Java Shared Data Toolkit (jsdt;
+version 2.0 or better). The required libraries have been included
+with this recoled source distribution. 
+
+If you are a devceloper, see
+
+http://cowrat.berlios.de/recplaj/
+
+and 
+
+https://jsdt.dev.java.net/
+
+for details.
+
+
+RUNNING RECOLED
+---------------
+
+Start the server:
+
+% cd lib ; java -jar recoled-server.jar &
+
+  (or double-click on recoled-server.jar)
+
+Start a client:
+
+% cd lib ; java -jar recoled-server.jar &
+
+  (or double-click on recoled-client.jar)
+

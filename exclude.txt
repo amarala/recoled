@@ -1,0 +1,12 @@
+*~
+*.aux
+*.bbl
+*.log
+*.tmp
+*.out
+*.ps
+*.class
+.cvsignore
+*/CVS
+*/CVS/*
+.DS_Store

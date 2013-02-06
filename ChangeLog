@@ -1,0 +1,7 @@
+2005-10-16  S. Luz  <luzs@cs.tcd.ie>
+
+	* All: First consolidated version. Previous versions included:
+	  (v1) text-recording only with no tracking of cuts and
+	  re-insertions (now fixed), and (v2) RTP profiling and audio
+	  recording via JMF (now dropped in favour of recplaj)
+

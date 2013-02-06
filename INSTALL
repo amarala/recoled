@@ -1,0 +1,57 @@
+-- Compile with:
+
+% make build
+
+-- Document with:
+
+% make docs
+
+-- Create a tarball for distribution with 
+
+% make dist
+
+-- Use as follows:
+
+Start the server:
+
+% cd lib ; java -jar recoled-server.jar &
+
+  (or double-click on recoled-server.jar)
+
+Start a client:
+
+% cd lib ; java -jar recoled-server.jar &
+
+
+Using CVS behind a firewall
+---------------------------
+
+With reasonably recent versions of CVS you can do:
+
+% cvs -d':pserver;proxy=www-proxy;proxyport=8080':anonymous@cvs.cowrat.berlios.de:/cvsroot/cowrat login
+
+and then
+
+% cvs -d':pserver;proxy=www-proxy;proxyport=8080':anonymous@cvs.cowrat.berlios.de:/cvsroot/cowrat co -P recoled
+
+Otherwise (and for check-in access), you can tunnel through SSH:
+
+First, establish connection to a machine outsid the firewall (wilde,
+in this case)
+
+% ssh -A -L2006:cvs.cowrat.berlios.de:22 wilde 
+
+then add the following lines to ~/.ssh/config
+
+host cvs.cowrat.berlios.de
+  hostname localhost
+  port 2006
+  user your-berlios-username
+
+
+and finally connect via ssh:
+
+% export CVS_RSH=ssh 
+% cvs -z3 -dyour-berlios-username@cvs.cowrat.berlios.de:/cvsroot/cowrat co recoled
+
+
